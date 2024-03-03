@@ -11,4 +11,4 @@ I hope you find them useful.
 
 ## Table of Contents
 
-- [HTML](/docs/html.md)
+- [HTML](/docs/html)
