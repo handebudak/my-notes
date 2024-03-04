@@ -1,5 +1,4 @@
-
-# TAGS
+# Tags
 
 ## 1. Document Structure
 
@@ -56,9 +55,6 @@
 - `<option>`
 - `<label>`: `<label>` HTML etiketi, bir form elemanına (input, select, textarea gibi) eşlik eden açıklama veya etiketi tanımlamak için kullanılır. Kullanıcıya belirli bir form elemanının ne için olduğunu veya ne tür veri girmesi gerektiğini anlatmak için kullanılır. Bu, form elemanlarına daha iyi erişilebilirlik (accessibility) sağlar ve kullanıcı deneyimini iyileştirir.
 
-
-
-
 ## 7. Tables
 
 - `<table>`
@@ -67,7 +63,7 @@
 - `<td>`: `<td>` (table data): Bu etiket, bir tablodaki veri hücrelerini temsil eder. Veri hücreleri, tablonun ana içeriğini oluşturur ve genellikle normal (yani, kalın olmayan) metin içerir.
 - `<caption>`: Genel olarak, `<caption>` etiketi bir tablonun genel başlığını belirtmek için kullanılırken, `<th>` etiketi her bir sütunun başlığını belirtmek için kullanılır.
 
-## 8. Semantic Elements 
+## 8. Semantic Elements
 
 - `<article>`
 - `<section>`
@@ -76,4 +72,3 @@
 - `<aside>`
 - `<main>`
 - `<figure>`: Bu etiket, bir resim, diyagram, fotoğraf, çizim veya diğer görsel içeriği tanımlar. Genellikle, görsel içeriği bir `<figure>` etiketi içine yerleştiririz. `<figure>` etiketi içine bir resim veya görsel içerikten başka metin veya açıklamalar da ekleyebiliriz.
-
