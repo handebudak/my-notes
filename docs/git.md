@@ -18,7 +18,7 @@ git init
 > Projenizin dosyalarını bu dizine ekleyin.
 
 3. **Değişiklikleri İzleme Alanına Ekleyin (Staging):**
-- Yapılan değişiklikleri izleme alanına eklemek için **`git add`** komutunu kullanın. Örneğin:
+- Yapılan değişiklikleri izleme alanına eklemek için **git add** komutunu kullanın. Örneğin:
 
 ```bash
 git add .
@@ -26,7 +26,7 @@ git add .
 > Burada, . işareti tüm değişiklikleri ekler.
 
 4. **Yapılan Değişiklikleri Commit Etme:**
-- Değişiklikleri bir commit'e dönüştürmek için **`git commit`** komutunu kullanın:
+- Değişiklikleri bir commit'e dönüştürmek için **git commit** komutunu kullanın:
 
 ```bash
 git commit -m "first commit"
@@ -37,10 +37,10 @@ git commit -m "first commit"
 - GitHub'daki uzak depoya bağlanmak için, projenizi orijinal depo olarak ekleyin:
 
 ```bash
-git remote add origin <uzak_depo_urlsi>
+git remote add origin [uzak depo urlsi]
 ```
 6. **Değişiklikleri Uzak Depoya(remote repository) İtmek:**
-- Local repository’deki değişiklikleri GitHub'daki remote repository’e göndermek için **`git push`** komutunu kullanın:
+- Local repository’deki değişiklikleri GitHub'daki remote repository’e göndermek için **git push** komutunu kullanın:
 
 ```bash
 git push -u origin main
@@ -52,7 +52,7 @@ git push -u origin main
 - Sadece branch oluşturur ama o branche geçmez.
 
 ```bash
-git branch [branch_ismi]
+git branch [branch ismi]
 ```
 
 > Örneğin main branchindeyken "git branch development" yaparsam "development" isminde yeni bir branch oluşturur ama mevcut branchim "git checkout development" yapana kadar main olarak kalır.
@@ -60,7 +60,7 @@ git branch [branch_ismi]
 - Branch oluşturur ve oluşturduğu branche geçer
 
 ```bash
-git checkout -b [branch_ismi]
+git checkout -b [branch ismi]
 ```
 
 > Örneğin "main" branchindeyken "git checkout -b development" yaparsam "development" isminde bir branch oluşturur ve mevcut branchi "development" olarak değiştirir.
@@ -68,7 +68,7 @@ git checkout -b [branch_ismi]
 ## Branch değiştirmenin tek yolu var:
 
 ```bash
-git checkout [branch_ismi]
+git checkout [branch ismi]
 ```
 
 > Yalnızca bir branchten diğer branche geçmemi sağlar. Örneğin "main" branchindeyken "git checkout development" yaparsam mevcut branchim "development" olur.
@@ -162,12 +162,12 @@ git push [remote sunucu adı (origin)] [branch ismi]
 ## Conflict çıkarsa ne yapılması gerekiyor?
  
 **Conflict Durumunu Belirleme:**
-- Conflict durumları genellikle birleştirme (merge) işlemi sırasında ortaya çıkar. GitHub'da bir PR (Pull Request) birleştirmeye çalıştığınızda veya bir dalı ana dala (main/master) birleştirmeye çalıştığınızda conflict oluşabilir.
+- Conflict durumları genellikle birleştirme (merge) işlemi sırasında ortaya çıkar. GitHub'da bir PR (Pull Request) birleştirmeye çalıştığınızda veya bir dalı ana dala (main) birleştirmeye çalıştığınızda conflict oluşabilir.
 
 **Conflict'i Çözme:**
 
 - İlk adım, çakışan dosyaları belirlemektir. Genellikle bu, terminal veya Git istemcisi üzerinden yapılır.
-- Çakışan dosyaları düzenleyin. Çakışan dosyalar, çakışma işaretleri (<<<<<<<, =======, >>>>>>>) ile işaretlenmiş olacak ve çakışan değişiklikler arasında size rehberlik edecektir.
+- Çakışan dosyaları düzenleyin. Çakışan dosyalar, çakışma işaretleri ile işaretlenmiş olacak ve çakışan değişiklikler arasında size rehberlik edecektir.
 - Conflict'i çözün ve dosyaları istediğiniz gibi düzenleyin.
 - Dosyaları kaydedin ve çözümlerinizi işleyin.
 
