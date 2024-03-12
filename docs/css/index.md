@@ -3,4 +3,4 @@ sidebar_position: 3
 title: CSS
 ---
 
-<!-- Burayı doldur, burası index sayfası -->
+This is a collection of notes on CSS.
