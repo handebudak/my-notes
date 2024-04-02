@@ -1,4 +1,6 @@
-# Variables (Değişkenler)
+# JavaScript 
+
+## Variables (Değişkenler)
 
 **`let`**, **`var`** ve **`const`** JavaScript'te değişken tanımlamak için kullanılan üç farklı anahtar kelimedir. Bunlar, değişkenin nasıl davrandığı ve kapsamıyla ilgili farklılıklar gösterirler. İşte her birinin özellikleri:
 
@@ -21,7 +23,7 @@
 - Const ile tanımlanan değişkenler blok kapsamında olabilir.
 - Const ile tanımlanan bir nesne veya dizi, referansı değiştirilemese de içeriği değiştirilebilir.
 
-# Data Types (Veri Tipleri)
+## Data Types (Veri Tipleri)
 
 ***Primitif Veri Tipleri:***
 
@@ -63,7 +65,7 @@
 
 Primitif veri tipleri, değerleri doğrudan saklar ve bellekte sabit boyutlarda depolanır. Non-primitif veri tipleri ise referansları saklar ve bellekte değişen boyutlarda depolanır. Bu fark, primitif ve non-primitif veri tiplerinin davranışlarını ve işlemlerini etkiler.
 
-# Type Conversions (Tip Dönüşümleri)
+## Type Conversions (Tip Dönüşümleri)
 
 **Implicit Conversion (Kapsayıcı Dönüşüm)**:
 
@@ -93,7 +95,7 @@ var metin = "Sayı: " + sayi; // 10'u "10" şekline dönüştürür
 - Bir nesneyi veya değeri boolean (mantıksal) bir değere dönüştürmek için kullanılır.
 - Boş bir dize, sıfır, **`null`**, **`undefined`**, **`NaN`** gibi değerler false olarak kabul edilir; diğer durumlarda true olarak kabul edilir.
 
-# Operators (Operatörler)
+## Operators (Operatörler)
 
 **Aritmetik Operatörler**:
 
@@ -129,17 +131,17 @@ var metin = "Sayı: " + sayi; // 10'u "10" şekline dönüştürür
 - **`||`** : Veya (or) operatörü
 - **`!`** : Değil (not) operatörü
 
-# Conditionals (Koşullar)
+## Conditionals (Koşullar)
 
-## if
+### if
 
 if bloğu ile tanımladığımız koşul eğer doğru yani true bilgi üretiyorsa if bloğu kapsamındaki kodlar işletilir eğer false üretirse işletilmez.
 
-## else
+### else
 
 if bloğunun true değer üretmediği durumda da bazı kodları çalıştırmak isteyebiliriz bu durumda else bloğunu kullanmalıyız.
 
-## else if
+### else if
 
 Bazen de bir koşula bağlı olarak farklı farklı koşullar üretmek isteyebiliriz. Bu durumda else-if bloğunu kullanarak ekstra sorular sorma imkanına sahip oluruz.
 
@@ -153,7 +155,7 @@ if (kosul1) {
 }
 ```
 
-## Üçlü operatör (’?’)
+### Üçlü operatör (’?’)
 
 `koşul` değerlendirildikten sonra eğer doğru döner ise `deger1` yanlış döner ise `deger2` sonuç değişkenine atanır.
 
@@ -162,7 +164,7 @@ let sonuc = koşul ? deger1 : deger2
 
 ```
 
-# Logical Operators (Mantıksal Operatörler)
+## Logical Operators (Mantıksal Operatörler)
 
 1. **Ve Operatörü (&&)**:
 - **`&&`** operatörü, iki koşulun da doğru olması durumunda ifadeyi doğru olarak değerlendirir.
