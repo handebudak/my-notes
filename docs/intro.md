@@ -12,4 +12,5 @@ I hope you find them useful.
 ## Table of Contents
 
 - [HTML](/docs/html)
+- [CSS](/docs/css/)
 - [Git Basics](/docs/git.md) 
