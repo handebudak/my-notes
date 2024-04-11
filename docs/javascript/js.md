@@ -447,3 +447,117 @@ const square = n => n * n  // -> 4
 
 
 
+## Arrays (Diziler)
+Değişkenlerin aksine, diziler *Çoklu değerleri* depolayabilirler. Dizi'deki her bir değer *index*'e sahiptir, ve her index *bellek adresindeki bir referans*'ı işaret eder. Bu *index'ler* kullanılarak her bir değere ulaşım sağlanabilir. Bir dizinin index'i *sıfır*'dan başlar ve dizinin son elemanının index'i, dizinin uzunluğundan bir eksiktir.
+
+Bir dizi, sıralı ve değiştirilebilirdir. Farklı veri türlerinin bir koleksiyonudur. Bir dizi, tekrar edilen elemanların ve farklı veri türlerinin depolanmasına izin verir. Bir dizi boş olabilir veya farklı veri türü değerlerine sahip olabilir.
+
+Objeler değerlerin anahtarlı bir şekilde koleksiyon halinde tutulmasını sağlar.
+
+Fakat bazı durumlarda *sıralı koleksiyon* tutmak gerekebilir, 1., 2. ve 3. elemente ihtiyaç olabilir. Örneğin kullanıcıların, ürünlerin, HTML elementlerinin liste halinde tutulmasını istediğinizde;
+
+Obje kullanmak mantıklı değildir, çünkü elemanların sırasını tutmaz bu objeler. Var olanların “arasına” yeni bir özellik girilemez. Objeler böyle kullanımlara uygun değildir.
+
+**Boş bir dizi nasıl oluşturulur**
+```jsx
+let arr = new Array();
+let arr = [];
+```
+
+**Diziler sıfır ile başlarlar**
+```jsx
+let meyveler = ["Elma", "Portakal", "Erik"];
+
+alert( meyveler[0] ); // Elma
+alert( meyveler[1] ); // Portakal
+alert( meyveler[2] ); // Erik
+```
+**Elemanı değiştirmek mümkündür, Veya diziye yeni bir eleman eklemek mümkündür**
+```jsx
+meyveler[2] = 'Armut'; // Şimdi ["Elma", "Portakal", "Armut"]
+meyveler[3] = 'Limon'; // Şimdi ["Elma", "Portakal", "Armut", "Limon"]
+```
+**Dizide bulunan elemanların boyutu length metodu ile öğrenilebilir:**
+```jsx
+let meyveler = ["Elma", "Portakal", "Erik"];
+
+alert( meyveler.length ); // 3
+```
+**Dizi her türlü elemanı tutabilir.**
+```jsx
+// Karmaşık tipler
+let arr = [ 'Elma', { isim: 'Ahmet' }, true, function() { alert('merhaba'); } ];
+
+// Birinci indeksteki değeri al ve "isim" özelliğini görüntüle
+alert( arr[1].isim ); // John
+
+// 3. indeksteki fonksiyonu al ve çalıştır.
+arr[3](); // merhaba
+```
+**Split kullanarak dizi oluşturmak**
+Bir diziyi farklı şekillerde bölebilir ve diziyi değiştirebiliriz. Aşağıdaki örneklere bir göz atalım.
+```jsx
+
+let  js = 'JavaScript'
+
+const  charsInJavaScript = js.split('')
+
+  
+
+console.log(charsInJavaScript) // ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t"]
+
+  
+
+let  companiesString = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+
+const  companies = companiesString.split(',')
+
+  
+
+console.log(companies) // ["Facebook", " Google", " Microsoft", " Apple", " IBM", " Oracle", " Amazon"]
+
+let  txt =
+
+'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+
+const  words = txt.split(' ')
+
+  
+
+console.log(words)
+
+// metnin özel karakterleri var, sadece kelimeleri nasıl alabileceğinizi düşünün
+
+// ["I", "love", "teaching", "and", "empowering", "people.", "I", "teach", "HTML,", "CSS,", "JS,", "React,", "Python"]
+
+```
+**index kullanarak dizi elemanlarına ulaşmak**
+Dizide elemanların indexlerini kullanarak o elemana ulaşabiliriz. Dizinin index'i 0'dan başlar. Aşağıdaki örnek her elemanın indexini açıkça göstermektedir.
+```jsx
+
+const  numbers = [0, 3.14, 9.81, 37, 98.6, 100] // sayı dizisi
+
+  
+
+console.log(numbers.length) // => dizinin uzunluğunu bilebiliriz. O da 6'dır
+
+console.log(numbers) // -> [0, 3.14, 9.81, 37, 98.6, 100]
+
+console.log(numbers[0]) // -> 0
+
+console.log(numbers[5]) // -> 100
+
+  
+
+let  lastIndex = numbers.length - 1;
+
+console.log(numbers[lastIndex]) // -> 100
+
+```
+
+
+
+
+
+
+
